@@ -1,11 +1,13 @@
-const express = require("express");
-const { swishPayment } = require("./controllers/payment.controller");
+// const express = require("express");
+// const { swishPayment } = require("./controllers/payment.controller");
 
-const app = express();
-const port = 4000;
+// const app = express();
+// const port = 4000;
 
-app.get("/payment", swishPayment);
+// app.get("/test", swishPayment);
 
-app.listen(port, () => {
-  console.log(`[server]: Server is running at https://localhost:${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`[server]: Server is running at https://localhost:${port}`);
+// });
+
+console.log("heybye");
