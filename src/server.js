@@ -5,7 +5,7 @@ const { Client, Intents } = require("discord.js");
 const client = new Client({
   intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
 });
-const PORT = process.env.PORT | 4000;
+const PORT = process.env.PORT || 8080;
 
 const generalChannelID = "985894851218407514";
 server.all("/", (req, res) => {
