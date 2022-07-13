@@ -1,4 +1,4 @@
-require("dotenv").config({ path: "./.env.development" });
+require("dotenv").config({ path: "./.env" });
 const express = require("express");
 const server = express();
 const { Client, Intents } = require("discord.js");
