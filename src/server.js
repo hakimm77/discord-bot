@@ -5,6 +5,7 @@ const { Client, Intents } = require("discord.js");
 const client = new Client({
   intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
 });
+const PORT = process.env.PORT | 4000;
 
 const generalChannelID = "985894851218407514";
 server.all("/", (req, res) => {
@@ -28,7 +29,7 @@ ${signature}`);
   });
 });
 
-server.listen(8080, () => {
+server.listen(PORT, () => {
   console.log("I am alive thanks to this");
 });
 
