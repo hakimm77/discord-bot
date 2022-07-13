@@ -15,7 +15,7 @@ server.all("/", (req, res) => {
 client.on("ready", () => {
   console.log(`${client.user.tag} is ready to go !`);
 
-  server.get("/test-message", async (req, res) => {
+  server.get("/send-message", async (req, res) => {
     const { username, signature, message } = req.query;
 
     await client.channels.cache.get(generalChannelID)
